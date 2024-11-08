@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Nettbutikk - Kasse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#produkter">Produkter</a></li>
+            <li><a href="#kategorier">Kategorier</a></li>
+            <li><a href="contact.html">Kontakt oss</a></li>
+        </ul>
+        <a href="checkout.html" class="shopping-cart">🛒</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Kasse</h1>
+
+    <section id="shoppingbag">
+        <h2>Din handlekurv</h2>
+        <div class="product-card">
+            <img src="https://picsum.photos/100" alt="Produktbilde">
+            <h3>Produktnavn</h3>
+            <p>Pris: 499,-</p>
+        </div>
+        <!-- Gjenta for flere produkter i handlekurven -->
+    </section>
+
+    <section id="personopplysninger">
+        <h2>Personopplysninger</h2>
+        <form>
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" id="fornavn" name="fornavn" required>
+            <label for="etternavn">Etternavn:</label>
+            <input type="text" id="etternavn" name="etternavn" required>
+            <!-- Flere felter for adresse, postnummer, poststed osv. -->
+        </form>
+    </section>
+
+    <section id="levering">
+        <h2>Levering</h2>
+        <label><input type="radio" name="levering" value="hjem"> Ekspresslevering hjem</label>
+        <label><input type="radio" name="levering" value="utlevering"> Pakke til utleveringssted</label>
+        <label><input type="radio" name="levering" value="standard"> Standard hjemlevering</label>
+    </section>
+
+    <section id="betaling">
+        <h2>Betaling</h2>
+        <form>
+            <label for="kortnummer">Kortnummer:</label>
+            <input type="text" id="kortnummer" name="kortnummer" required>
+            <!-- Flere felter for utløpsdato, CVC osv. -->
+            <button type="submit">Fullfør kjøp</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <!-- Samme footer som på forsiden -->
+</footer>
+
+</body>
+</html>
