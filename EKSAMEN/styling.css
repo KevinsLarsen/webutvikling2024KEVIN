@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px
+}
+
+ul {
+    list-style-type: none; /* Fjerner punktene */
+    padding: 0; /* Fjerner innvendig margin */
+    margin: 0; /* Fjerner utvendig margin */
+}
+
+li {
+    margin-bottom: 10px; /* Legger til mellomrom mellom elementene */
+}
+
+/* Generell styling for lenker */
+a {
+    color: black; /* Endrer tekstfargen til svart */
+    text-decoration: none; /* Fjerner linjen under teksten */
+}
+
+/* Eventuelt kan du legge til en hover-effekt */
+a:hover {
+    color: grey; /* Endrer tekstfargen ved hover */
+    text-decoration: underline; /* Legger tilbake linjen ved hover */
+}
+
+
+/* Fjern standard styling fra ul */
+#ikoner {
+    list-style-type: none; /* Fjern kulepunkter */
+    padding: 0;
+    margin: 20px 0; /* Legg til mellomrom ovenfor */
+    display: flex; /* Gjør listen fleksibel */
+    flex-direction: column; /* Stabler elementene vertikalt */
+    align-items: left; /* Sentraliser ikonene */
+    gap: 20px; /* Mellomrom mellom ikonene */
+    margin-top: 10px;
+}
+
+/* Styling for ikoner */
+#ikoner li img {
+    width: 30px; /* Juster ikonstørrelse */
+    height: 30px;
+}
+
+/* Søkefelt */
+.search-bar {
+    display: flex;
+    align-items: center; /* Sentraliser vertikalt */
+    border: 1px solid #ccc; /* Ramme rundt søkefeltet */
+    border-radius: 5px; /* Runde hjørner */
+    overflow: hidden; /* Håndter overskridelse */
+    width: 200px; /* Redusert bredde */
+    margin-bottom: 10px; /* Legg til plass under søkefeltet */
+}
+
+/* Tekstboksen */
+.search-input {
+    border: none; /* Fjern standard ramme */
+    padding: 5px; /* Redusert innvendig polstring */
+    font-size: 14px; /* Redusert skriftstørrelse */
+    flex-grow: 1; /* Fyller tilgjengelig plass */
+    outline: none; /* Fjern fokus-ramme */
+}
+
+/* Søkeknappen */
+.search-button {
+    border: none; /* Fjern standard knapp-ramme */
+    background: #fff; /* Bakgrunnsfarge */
+    padding: 5px; /* Redusert innvendig polstring */
+    cursor: pointer; /* Hånd-ikon ved hover */
+    display: flex; /* Juster ikon i midten */
+    align-items: center; /* Sentraliser vertikalt */
+    justify-content: center; /* Sentraliser horisontalt */
+}
+
+.search-icon {
+    width: 16px; /* Redusert ikonstørrelse */
+    height: 16px;
+}
+
+
+.tekstboks {
+    background-color: #d3d3d3; /* Lysegrå bakgrunn */
+    padding: 20px;
+    text-align: right;
+    width: 355px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Legger til litt skygge */
+}
+
+.overskrift {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.beskrivelse {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333; /* Mørk tekst */
+}
+
+.knapp {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: uppercase; /* Gjør teksten store bokstaver */
+}
+
+.knapp:hover {
+    background-color: rgb(188, 188, 188);
+    color: white; /* Endrer farge ved hover */
+    transition: 0.3s;
+}
+
+.produkter-seksjon {
+    text-align: left; /* Sentrer teksten */
+    margin: 40px 20px; /* Avstand rundt hele seksjonen */
+}
+
+.produkter-seksjon h2 {
+    font-size: 24px; /* Tittelstørrelse */
+    font-weight: bold; /* Gjør teksten fet */
+    margin-bottom: 10px; /* Avstand under tittelen */
+}
+
+.produkter-seksjon p {
+    font-size: 16px; /* Undertekst-størrelse */
+    color: #555; /* Grå farge for undertekst */
+    margin-bottom: 20px; /* Avstand under underteksten */
+}
+
+.produkter-kort {
+    display: flex; /* Sett kortene på én linje */
+    justify-content: center; /* Sentrer kortene horisontalt */
+    gap: 20px; /* Avstand mellom kortene */
+}
+
+.kort {
+    width: 120px; /* Bredde på hvert kort */
+    height: 80px; /* Høyde på hvert kort */
+    border: 1px solid #ccc; /* Ramme rundt kortet */
+    display: flex; /* For å sentrere innholdet */
+    justify-content: center; /* Sentrer horisontalt */
+    align-items: center; /* Sentrer vertikalt */
+    border-radius: 5px; /* Runde hjørner */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lett skygge */
+    font-size: 14px; /* Skriftstørrelse for kort */
+    font-weight: bold; /* Fet skrift */
+    text-align: center; /* Sentrer tekst i flere linjer */
+    background-color: #fff; /* Hvit bakgrunn */
+    cursor: pointer; /* Håndikon ved hover */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animasjonseffekt */
+}
+
+.kort:hover {
+    transform: translateY(-5px); /* Løft kortet litt ved hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Større skygge ved hover */
+}
+
+.lambo {
+    width: 394px;
+    height: 80;
+    outline: solid; color:gray
+}
+
+.category-box {
+    width: 385px; /* Boksens bredde */
+    height: 290px; /* Boksens høyde */
+    border: 1px solid black; /* Tynn svart ramme */
+    display: flex; /* For å sentrere innhold */
+    align-items: center; /* Sentraliser vertikalt */
+    justify-content: center; /* Sentraliser horisontalt */
+    margin: 20px auto; /* Sentraliserer boksen i midten av siden */
+    font-size: 16px; /* Størrelse på teksten */
+    font-weight: bold; /* Gjør teksten fet */
+    color: black; /* Tekstfarge */
+    text-align: center; /* Sentraliser teksten horisontalt */
+    background-color: white; /* Bakgrunnsfarge */
+}
+
+.card {
+    width: 350px; /* Bredde på kortet */
+    border: 1px solid #ccc; /* Ramme rundt kortet */
+    padding: 15px; /* Innvendig margin */
+    background-color: white; /* Hvit bakgrunn */
+    font-family: Arial, sans-serif; /* Skrifttype */
+    margin: 20px auto; /* Sentrer kortet på siden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Skygge for dybde */
+}
+
+.card-image {
+    width: 100px; /* Bredde på bildet */
+    height: 100px; /* Høyde på bildet */
+    object-fit: cover; /* Beskjær bilde for å fylle plassen */
+    display: block; /* Sørg for at bildet er blokk-basert */
+}
+
+.card-title {
+    font-size: 18px; /* Størrelse på tittelen */
+    font-weight: bold; /* Gjør tittelen fet */
+    margin-bottom: 10px; /* Avstand under tittelen */
+    color: black; /* Tekstfarge */
+}
+
+.card-description {
+    font-size: 14px; /* Størrelse på beskrivelsen */
+    line-height: 1.6; /* Linjeavstand for bedre lesbarhet */
+    color: #333; /* Mørk tekstfarge */
+}
+
+h5 {
+    font-size: 24px; /* Gjør teksten større */
+    font-weight: bold; /* Gjør teksten fetere */
+    color: black; /* Endrer fargen (valgfritt) */
+    text-align: left; /* Sentraliserer teksten (valgfritt) */
+    margin: 20px 0; /* Legger til mellomrom over og under teksten (valgfritt) */
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p img {
+    margin-right: 10px; /* Mellomrom mellom bilde og tekst */
+}
+
+hr {
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 70px; 
+}
+
+h7 {
+    font-size: 30px;
+    font-weight: bold;
+}
