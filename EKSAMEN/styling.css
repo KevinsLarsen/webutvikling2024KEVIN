@@ -246,7 +246,17 @@ hr {
     margin-bottom: 70px; 
 }
 
-h7 {
-    font-size: 30px;
-    font-weight: bold;
+.logoseksjon {
+    margin-bottom: 20px;
 }
+
+/* Generell styling for seksjoner */
+h6 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .sosiale-medier img {
+    width: 24px; /* Juster størrelsen på ikonene */
+    height: 24px;
+  } 
