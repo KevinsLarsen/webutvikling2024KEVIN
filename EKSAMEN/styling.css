@@ -79,7 +79,7 @@ a:hover {
     height: 100%; 
     width: 40px; 
     display: flex; 
-    align-items: center
+    align-items: center ;
     justify-content: center; 
 }
 
@@ -229,7 +229,7 @@ h5 {
     font-size: 24px; 
     font-weight: bold; 
     color: black; 
-    text-align: left
+    text-align: left;
     margin: 20px 0; 
 }
 
