@@ -65,6 +65,92 @@
         <button type="submit">Lagre</button>
         <a href="#" class="cancel-link">Avbryt</a>
     </form>
+
+    <h3>3. LEVERING</h3>
+    <h4>LEVERINGSVALG</h4>
+    <form>
+        <label>
+            <input type="radio" name="delivery" value="express-home">
+            Express Hjemlevering
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="delivery" value="express-pickup">
+            Ekspress Pakke til utleveringssted
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="delivery" value="standard-home">
+            Standard Hjemlevering
+        </label>
+    </form>
      
+    <h3>4. BETALING</h3>
+    <h4>BETAL MED KORT</h4>
+    <form>
+        <label for="card-number">Kortnummer</label>
+        <input type="text" id="card-number" name="card-number" placeholder="342342*****4435" required>
+
+        <label for="expiry-date">Utløpsdato</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="mm / dd / yyyy" required>
+
+        <label for="cvc">CVC/CVV</label>
+        <input type="text" id="cvc" name="cvc" placeholder="CVC/CVV" required>
+
+        <p>Å betale inkl. mva.<br><strong>1 199 kr</strong></p>
+        <button type="submit">Fullfør kjøp</button>
+
+        <p>
+            Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. 
+            Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger 
+            uriktige eller ufullstendige opplysninger.
+        </p>
+
+        <label>
+            <input type="checkbox" name="newsletter">
+            Ja takk! Send nyhetsbrev til meg.
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="sms-offers">
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+        </label>
+    </form>
+
+    <footer>
+        <hr>
+        <h6>Logo</h6>
+        <p class="logoseksjon">
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        </p>
+
+        <h6>Kontakt</h6>
+        <p>
+            <img src="pin.png" alt="Adresse ikon" style="width: 20px; vertical-align: middle;"> 
+            <b>Adresse:</b> B R A Veien 4, 1757 Halden<br>
+            <img src="phone.png" alt="Telefon ikon" style="width: 20px; vertical-align: middle;"> 
+            <b>Telefon:</b> 69 60 80 00<br>
+            <img src="mail.png" alt="E-post ikon" style="width: 20px; vertical-align: middle;"> 
+            <b>E-post:</b> halden@hiof.no<br>
+            <img src="clock.png" alt="Klokke ikon" style="width: 20px; vertical-align: middle;"> 
+            <b>Åpningstider:</b> Stenger 15:00
+        </p>
+
+        <h6>SNARVEIER</h6>
+        <ul>
+        <li><a href="#">Produkter</a></li>
+        <li><a href="#">Kategorier</a></li>
+        <li><a href="#">Kontakt oss</a></li>
+        </ul>
+
+        <h6>SOSIALE MEDIER</h6>
+        <ul class="sosiale-medier">
+        <li><a href="#"><img src="insta.png" alt="Instagram"></a></li>
+        <li><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
+        <li><a href="#"><img src="linkedin.webp" alt="LinkedIn"></a></li>
+        <li><a href="#"><img src="pinterest.png" alt="Pinterest"></a></li>
+        </ul>
+        
+    </footer>
 </body>
 </html>
